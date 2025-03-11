@@ -42,25 +42,35 @@ class BinaryTree {
   }
 
   insert(data){
-    this.root = this.insertNode(this.root,data);
+    this.root = this._insert(this.root,data);
   } 
 
-  insertNode(node, value) {
+  printTree(){
+    this._printTree(this.root);
+  }
+
+  _insert(node, value) {
 
     if(node === null)
        return new Node(value);
     else if(value <= node.data)
     {
-      node.left = this.insertNode(node.left, value);
+      node.left = this._insert(node.left, value);
     }
     else if (value > node.data)
     {
-      node.right = this.insertNode(node.right,value);
+      node.right = this._insert(node.right,value);
     }
-
-
-
     return node;
+  }
+
+  _printTree(node){
+    
+    if(node !== null){
+      this._printTree(node.left)
+      this._printTree(node.right)
+      document.writeln(node.data);
+    }
 
   }
 }
@@ -122,6 +132,8 @@ function main () {
 
   for (let dice = 1; dice < 6; dice++) 
     t.insert( Math.floor(Math.random() * (7 - 1) ) + 1 )
+
+  t.printTree();
 
   console.log(t);
 
