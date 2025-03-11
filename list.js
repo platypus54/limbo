@@ -49,7 +49,7 @@ class BinaryTree {
 
     if(node === null)
        return new Node(value);
-    else if(value < node.data)
+    else if(value <= node.data)
     {
       node.left = this.insertNode(node.left, value);
     }
@@ -57,6 +57,8 @@ class BinaryTree {
     {
       node.right = this.insertNode(node.right,value);
     }
+
+
 
     return node;
 
@@ -106,9 +108,7 @@ function main () {
 
   let t = new BinaryTree();
 
-  const combinationsWithRepetition = getCombinationsWithRepetition([1,2,3,4,5,6], 5);
-
-  //const combinationsWithRepetition = getCombinationsWithRepetition([1,3], 1)
+  /* const combinationsWithRepetition = getCombinationsWithRepetition([1,2,3,4,5,6], 5);
 
   combinationsWithRepetition.forEach(element => {
     let sum = 0;
@@ -118,8 +118,10 @@ function main () {
 
     t.insert(sum);
 
-  });
+  }); */
 
+  for (let dice = 1; dice < 6; dice++) 
+    t.insert( Math.floor(Math.random() * (7 - 1) ) + 1 )
 
   console.log(t);
 
