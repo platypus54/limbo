@@ -3,7 +3,6 @@ let rolls = 0;
 
 q = [];
 
-
 function getCombinationsWithRepetition(arr, length, start = 0, current = [], result = []) {
   if (current.length === length) { 
       result.push([...current]);
@@ -18,8 +17,6 @@ function getCombinationsWithRepetition(arr, length, start = 0, current = [], res
 
   return result;
 }
-
-
 
 class Node{
 
@@ -45,10 +42,6 @@ class BinaryTree {
     this.root = this._insert(this.root,data);
   } 
 
-  printTree(){
-    this._printTree(this.root);
-  }
-
   _insert(node, value) {
 
     if(node === null)
@@ -64,15 +57,40 @@ class BinaryTree {
     return node;
   }
 
+  printTree(){
+    this._printTree(this.root);
+  }
+
   _printTree(node){
-    
     if(node !== null){
       this._printTree(node.left)
       this._printTree(node.right)
       document.writeln(node.data);
     }
-
   }
+
+  getListFromTree(){
+    let hereIsAListToBeMadeFromATree = [];
+    this._getListFromTree(this.root,hereIsAListToBeMadeFromATree)
+    return hereIsAListToBeMadeFromATree;
+  }
+
+  _getListFromTree(node, list){
+    if(node !== null){
+      this._getListFromTree(node.left,list);
+      this._getListFromTree(node.right,list);
+      list.push(node.data);
+    }
+  }
+
+  roll(){
+    let n = 0;
+    for (let n = 0; n < 5; n++) {
+      this.insert(Math.floor(Math.random() * (7 - 1) ) + 1);
+    }
+  }
+ 
+
 }
 
 //fibonacci(5)
@@ -130,12 +148,18 @@ function main () {
 
   }); */
 
-  for (let dice = 1; dice < 6; dice++) 
-    t.insert( Math.floor(Math.random() * (7 - 1) ) + 1 )
+  for (let index = 0; index < 1; index++)
+  {
+    t.roll();
+    document.writeln("<br>");
+  }
+
+  aList = t.getListFromTree();
 
   t.printTree();
 
   console.log(t);
+  console.log(aList);
 
 }
 
