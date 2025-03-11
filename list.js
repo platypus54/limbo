@@ -4,13 +4,31 @@ let rolls = 0;
 q = [];
 
 
+function getCombinationsWithRepetition(arr, length, start = 0, current = [], result = []) {
+  if (current.length === length) { 
+      result.push([...current]);
+      return;
+  }
+
+  for (let i = start; i < arr.length; i++) {
+      current.push(arr[i]);
+      getCombinationsWithRepetition(arr, length, i, current, result); // Allow repeated values
+      current.pop();
+  }
+
+  return result;
+}
+
+
 
 class Node{
+
   constructor(data){
     this.data = data;
     this.left = null;
     this.right = null;
   }
+
 }
 
 class BinaryTree {
@@ -20,55 +38,30 @@ class BinaryTree {
   }
 
   lessThan(nodeDataLeft, nodeDataRight){
-      return 
+      return nodeDataLeft < nodeDataRight;
   }
 
   insert(data){
-      // create a node to put the data in
-      let newNode = new Node(data);
-      
-      // if the root is empty, store this as the root
-      if(!this.root){
+    this.root = this.insertNode(this.root,data);
+  } 
 
-        this.root = newNode;
-      }
-      else{
-        // we pass in our root and the node we are to add
-        // 
-        this._insertNode(this.root,newNode);
-      }
-  }
+  insertNode(node, value) {
 
-  _insertNode(node, newNode) {
-
-    // this is a big part...
-    // we end up finding the spot to place our node by comparing the data
-    // for this insert, the data is compared by a less than operator.
-    if(newNode.data < node.data)
+    if(node === null)
+       return new Node(value);
+    else if(value < node.data)
     {
-        // 
-      if(!node.left)
-      {
-        node.left = newNode;
-      }
-      else
-      {
-        this._insertNode(node.left, newNode)
-      }
+      node.left = this.insertNode(node.left, value);
     }
-    else {
-        if(!node.right)
-        {
-            node.right = newNode;
-        }
-        else 
-        {
-          this._insertNode(node.right, newNode);
-        }
+    else if (value > node.data)
+    {
+      node.right = this.insertNode(node.right,value);
     }
+
+    return node;
+
   }
 }
-
 
 //fibonacci(5)
 function fibonacci(n, memo = {})
@@ -113,11 +106,19 @@ function main () {
 
   let t = new BinaryTree();
 
-  t.insert(1);
-  t.insert(2);
-  t.insert(3);
-  t.insert(9);
-  t.insert(0);
+  const combinationsWithRepetition = getCombinationsWithRepetition([1,2,3,4,5,6], 5);
+
+  //const combinationsWithRepetition = getCombinationsWithRepetition([1,3], 1)
+
+  combinationsWithRepetition.forEach(element => {
+    let sum = 0;
+    element.forEach(item => {
+      sum += item;
+    })
+
+    t.insert(sum);
+
+  });
 
 
   console.log(t);
