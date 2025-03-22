@@ -24,6 +24,7 @@ class Node{
     this.data = data;
     this.left = null;
     this.right = null;
+    this.depth;
   }
 
 }
@@ -39,7 +40,7 @@ class BinaryTree {
   }
 
   insert(data){
-    this.root = this._insert(this.root,data);
+     this.root = this._insert(this.root,data);
   } 
 
   _insert(node, value) {
@@ -93,12 +94,21 @@ class BinaryTree {
   {
     this._in_order_traversal(this.root);
   }
+  // processing the left side of root first, then to the right.  {left tree, root node, right tree}
+  // 
   _in_order_traversal(node){
     if(node !== null)
     {
+      
       this._in_order_traversal(node.left);
-      document.writeln(node.data);
+
+      if(node == this.root)
+        document.writeln(`<h1 style="color:blue"> ${node.data}</h1>`);
+      else
+        document.writeln(`<p> ${node.data}<p>`);
+
       this._in_order_traversal(node.right);
+
     }
   }
 
@@ -107,15 +117,20 @@ class BinaryTree {
     this._pre_order_traversal(this.root);
   }
 
+  // {root, left tree, right tree}
   _pre_order_traversal(node){
     if(node !== null)
       {
-        document.writeln(node.data);
+        if(node == this.root)
+          document.writeln(`<p style="color:blue"> ${node.data}</p>`);
+        else
+          document.writeln(`<p> ${node.data}<p>`);
         this._pre_order_traversal(node.left);
         this._pre_order_traversal(node.right);
       }
   }
 
+  // {root, right tree, left tree}
   post_order_traversal(){
     this._post_order_traversal(this.root)
   }
@@ -123,14 +138,41 @@ class BinaryTree {
   _post_order_traversal(node){
     if(node !== null)
       {
+        
         this._pre_order_traversal(node.left);
+        
         this._pre_order_traversal(node.right);
-        document.writeln(node.data);
+        
+        if(node == this.root)
+          document.writeln(`<p style="color:blue"> ${node.data}</p>`);
+        else
+          document.writeln(`<p> ${node.data}<p>`);
+        
       }
   }
 
-
+  get_depth(){
+    this._get_depth(this.root,0);
   }
+  
+  _get_depth(node,depth){
+    
+      if(node !== null)
+      {
+        this._get_depth(node.left,depth + 1);
+        this._get_depth(node.right,depth + 1);
+        node.depth = depth;
+      }
+  }
+
+  get_height(){
+    this._get_height(this.root,0);
+  }
+
+  _get_height(){}
+}
+
+
 
 
 //------------------------------------------------------------
@@ -148,29 +190,32 @@ function main () {
         t.insert(sum);
   }); */
 
-  for (let index = 0; index < 8; index++)
+  for (let index = 0; index < 4; index++)
   {
     t.roll();
   }
 
   aList = t.getListFromTree();
+
   //t.printTree();
   
-  document.write("<h1> in order traversal </h1>")
+  document.writeln("<h1> in order traversal </h1>")
   t.in_order_traversal();
   
-  document.write("<h1>pre order traversal</h1> ")
+  document.writeln("<h1>pre order traversal</h1> ")
   t.pre_order_traversal();
 
-  document.write("<h1>post order traversal</h1> ")
+  document.writeln("<h1>post order traversal</h1> ")
   t.post_order_traversal();
+
+  t.get_depth();
 
   console.log(t);
 }
 
 
 
-
+/****************************************************************************/
 
 //fibonacci(5)
 function fibonacci(n, memo = {})
