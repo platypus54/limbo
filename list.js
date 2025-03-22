@@ -25,6 +25,10 @@ class Node{
     this.left = null;
     this.right = null;
     this.depth;
+    this.isChild = false;
+    this.isRoot = false;
+    this.isParent = false;
+    this.isleaf = false;
   }
 
 }
@@ -35,8 +39,12 @@ class BinaryTree {
       this.root = null;
   }
 
-  lessThan(nodeDataLeft, nodeDataRight){
-      return nodeDataLeft < nodeDataRight;
+  
+  isEmpty(){
+    if(this.root == null)
+      return true;
+    else
+      return false;
   }
 
   insert(data){
@@ -47,7 +55,7 @@ class BinaryTree {
 
     if(node === null)
        return new Node(value);
-    else if(value <= node.data)
+    else if(value < node.data)
     {
       node.left = this._insert(node.left, value);
     }
@@ -94,7 +102,7 @@ class BinaryTree {
   {
     this._in_order_traversal(this.root);
   }
-  // processing the left side of root first, then to the right.  {left tree, root node, right tree}
+ 
   // 
   _in_order_traversal(node){
     if(node !== null)
@@ -146,8 +154,7 @@ class BinaryTree {
         if(node == this.root)
           document.writeln(`<p style="color:blue"> ${node.data}</p>`);
         else
-          document.writeln(`<p> ${node.data}<p>`);
-        
+          document.writeln(`<p> ${node.data}<p>`);     
       }
   }
 
@@ -159,9 +166,16 @@ class BinaryTree {
     
       if(node !== null)
       {
+        node.depth = depth;
+
         this._get_depth(node.left,depth + 1);
         this._get_depth(node.right,depth + 1);
-        node.depth = depth;
+
+        if(node == this.root)
+          document.writeln(`<p style="color:blue"> ${node.depth}</p>`);
+        else
+          document.writeln(`<p> ${node.depth}<p>`);
+        
       }
   }
 
@@ -169,7 +183,25 @@ class BinaryTree {
     this._get_height(this.root,0);
   }
 
+
   _get_height(){}
+
+  find_leaves(){
+    this._find_leaves(this.root);
+  }
+
+  _find_leaves(node){
+      if( node !== null)
+      {
+        if(node.left == null && node.right == null)
+           node.isleaf = true;
+        else
+        {   
+            this._find_leaves(node.left);
+            this._find_leaves(node.right);
+        }
+      } 
+  }
 }
 
 
@@ -180,6 +212,9 @@ main();
 function main () {
 
   let t = new BinaryTree();
+  let emptyTree = new BinaryTree();
+
+  console.log(emptyTree.isEmpty());
 
   /* const combinationsWithRepetition = getCombinationsWithRepetition([1,2,3,4,5,6], 5);
       combinationsWithRepetition.forEach(element => {
@@ -208,9 +243,15 @@ function main () {
   document.writeln("<h1>post order traversal</h1> ")
   t.post_order_traversal();
 
+  document.writeln("<h1>depth</h1> ")
   t.get_depth();
+  t.find_leaves();
 
+  emptyTree.insert("NOT_EMPTY");
+
+  emptyTree.find_leaves();
   console.log(t);
+  console.log(emptyTree);
 }
 
 
