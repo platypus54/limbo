@@ -112,12 +112,7 @@ class BinaryTree {
       
       this._in_order_traversal(node.left);
 
-        if(node == this.root)
-          document.writeln(`<p style="color:blue"> ${node.data}</p>`);
-        else if(node.left == null && node.right == null)
-          document.writeln(`<p style="color:green"> ${node.data}</p>`);
-        else if(node.left != null || node.right != null)
-          document.writeln(`<p style="color:orange"> ${node.data}</p>`);
+        this.colorNode(node);
 
       this._in_order_traversal(node.right);
 
@@ -133,12 +128,7 @@ class BinaryTree {
   _pre_order_traversal(node){
     if(node !== null)
       {
-        if(node == this.root)
-          document.writeln(`<p style="color:blue"> ${node.data}</p>`);
-        else if(node.left == null && node.right == null)
-          document.writeln(`<p style="color:green"> ${node.data}</p>`);
-        else if(node.left != null || node.right != null)
-          document.writeln(`<p style="color:orange"> ${node.data}</p>`);
+        this.colorNode();
           
         this._pre_order_traversal(node.left);
         this._pre_order_traversal(node.right);
@@ -156,12 +146,7 @@ class BinaryTree {
         this._post_order_traversal(node.left);
         this._post_order_traversal(node.right);
         
-        if(node == this.root)
-          document.writeln(`<p style="color:blue"> ${node.data}</p>`);
-        else if(node.left == null && node.right == null)
-          document.writeln(`<p style="color:green"> ${node.data}</p>`);
-        else if(node.left != null || node.right != null)
-          document.writeln(`<p style="color:orange"> ${node.data}</p>`); 
+        this.colorNode(node);
       }
   }
 
@@ -179,7 +164,7 @@ class BinaryTree {
           document.writeln(`<p style="color:blue"> ${node._meta_data.depth}</p>`);
         else
           document.writeln(`<p> ${node._meta_data.depth}<p>`);
-        
+
         this._get_depth(node.left,depth + 1);
         this._get_depth(node.right,depth + 1);
         
@@ -224,6 +209,15 @@ class BinaryTree {
           this._find_parents(node.right);
         
       } 
+  }
+
+  colorNode(node){
+        if(node == this.root)
+          document.writeln(`<p style="color:blue"> ${node.data}</p>`);
+        else if(node.left == null && node.right == null)
+          document.writeln(`<p style="color:green"> ${node.data}</p>`);
+        else if(node.left != null || node.right != null)
+          document.writeln(`<p style="color:orange"> ${node.data}</p>`); 
   }
 }
 
@@ -278,46 +272,4 @@ function main () {
 
   console.log(t);
   console.log(emptyTree);
-
-
-}
-
-
-
-/****************************************************************************/
-
-//fibonacci(5)
-function fibonacci(n, memo = {})
-{
-
-  if(n in memo )
-    return memo[n];
-  
-  if(n == 0){
-    console.log(`${memo[0]}`)
-    return memo[0] = 0;
-  }
-
-
-  if(n == 1){
-    console.log(` ${memo[1]}`)
-    return memo[1] = 1;
-  }
-
-
-  if(n >= 2);
-  {
-    console.log(` f(${n}) ` )
-
-    let a = fibonacci(n - 1, memo); 
-    console.log(`/ \n f(${a}) `)
-
-    let b = fibonacci(n - 2, memo);
-    
-    console.log(` f(${b}) `);
-    
-    memo[n] = a + b;
-
-    return memo[n];
-  }
 }
