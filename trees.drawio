@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0" version="26.1.3">
   <diagram name="Page-1" id="28c0V_zp-TiMR2vPcXUR">
-    <mxGraphModel dx="2092" dy="909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1962" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -209,8 +209,8 @@
         <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-46" value="&lt;div align=&quot;left&quot;&gt;Dead end. And consequently we reach the end of the left subtree.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="PHoDI3Z7Dd6WKzNwkaG9-47">
           <mxGeometry x="205" y="170" width="370" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-48" value="&lt;h1&gt;pre order traversal&lt;/h1&gt;&lt;div&gt;&lt;br&gt; &lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;11425&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1210" y="20" width="340" height="300" as="geometry" />
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-48" value="&lt;h1&gt;pre-order traversal&lt;/h1&gt;&lt;div&gt;The main difference here is the order in which we process our nodes. In this case, we process the root first before moving on to the next node. We still maintain the left-to-right approach when descending down the tree. For this tree, we would expect the order of the nodes to be:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="20" width="430" height="160" as="geometry" />
         </mxCell>
         <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-50" value="call stack" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="40" y="520" width="140" height="90" as="geometry" />
@@ -685,6 +685,48 @@
         </mxCell>
         <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-245" value="H" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="-629.9956521739131" y="409.57" width="70.43478260869566" height="70.43478260869566" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-251" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1210.0039130434782" y="200.00304347826088" width="390.4260869565221" height="71.73695652173919" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-246" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="PHoDI3Z7Dd6WKzNwkaG9-251">
+          <mxGeometry y="0.006956521739141408" width="70.43478260869566" height="70.43478260869566" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-247" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="PHoDI3Z7Dd6WKzNwkaG9-251">
+          <mxGeometry x="79.99608695652182" y="1.3000000000000114" width="70.43478260869566" height="70.43478260869566" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-248" value="4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="PHoDI3Z7Dd6WKzNwkaG9-251">
+          <mxGeometry x="159.99565217391296" width="70.43478260869566" height="70.43478260869566" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-249" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="PHoDI3Z7Dd6WKzNwkaG9-251">
+          <mxGeometry x="240.00043478260886" y="1.3021739130435037" width="70.43478260869566" height="70.43478260869566" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-250" value="5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="PHoDI3Z7Dd6WKzNwkaG9-251">
+          <mxGeometry x="319.9913043478264" y="1.3021739130435037" width="70.43478260869566" height="70.43478260869566" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-258" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1210.0039130434782" y="360.0030434782609" width="390.4260869565221" height="71.73695652173919" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-259" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="PHoDI3Z7Dd6WKzNwkaG9-258">
+          <mxGeometry y="0.006956521739141408" width="70.43478260869566" height="70.43478260869566" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-260" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="PHoDI3Z7Dd6WKzNwkaG9-258">
+          <mxGeometry x="79.99608695652182" y="1.3000000000000114" width="70.43478260869566" height="70.43478260869566" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-261" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="PHoDI3Z7Dd6WKzNwkaG9-258">
+          <mxGeometry x="159.99565217391296" width="70.43478260869566" height="70.43478260869566" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-262" value="4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="PHoDI3Z7Dd6WKzNwkaG9-258">
+          <mxGeometry x="240.00043478260886" y="1.3021739130435037" width="70.43478260869566" height="70.43478260869566" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-263" value="5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="PHoDI3Z7Dd6WKzNwkaG9-258">
+          <mxGeometry x="319.9913043478264" y="1.3021739130435037" width="70.43478260869566" height="70.43478260869566" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-267" value="Here the root is first, then the left, and lastly the right side. " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="299.57" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-268" value="Conversely, we can see that the in-order traversal splits between the root." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1135.22" y="450" width="540" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
