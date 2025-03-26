@@ -761,6 +761,12 @@
         <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-279" value="&lt;h1&gt;post-order traversal&lt;/h1&gt;&lt;div&gt;The main difference here is the order in which we process our nodes. In this case, we process the root first before moving on to the next node. We still maintain the left-to-right approach when descending down the tree. For this tree, we would expect the order of the nodes to be:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1190.22" y="530" width="430" height="160" as="geometry" />
         </mxCell>
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-280" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="890" y="520" as="sourcePoint" />
+            <mxPoint x="1670" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
