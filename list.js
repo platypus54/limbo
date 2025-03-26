@@ -1,23 +1,3 @@
-let dice = new Array(5);
-let rolls = 0;
-
-q = [];
-
-function getCombinationsWithRepetition(arr, length, start = 0, current = [], result = []) {
-  if (current.length === length) { 
-      result.push([...current]);
-      return;
-  }
-
-  for (let i = start; i < arr.length; i++) {
-      current.push(arr[i]);
-      getCombinationsWithRepetition(arr, length, i, current, result); // Allow repeated values
-      current.pop();
-  }
-
-  return result;
-}
-
 class Node{
 
   constructor(data){
@@ -78,7 +58,6 @@ class BinaryTree {
       this._printTree(node.left)
       this._printTree(node.right)
       document.writeln(node.data + "");
-      
     }
   }
 
@@ -128,7 +107,7 @@ class BinaryTree {
   _pre_order_traversal(node){
     if(node !== null)
       {
-        this.colorNode();
+        this.colorNode(node);
           
         this._pre_order_traversal(node.left);
         this._pre_order_traversal(node.right);
@@ -158,7 +137,6 @@ class BinaryTree {
     
       if(node !== null)
       {
-
         node._meta_data.depth = depth;
         if(node == this.root)
           document.writeln(`<p style="color:blue"> ${node._meta_data.depth}</p>`);
@@ -174,9 +152,9 @@ class BinaryTree {
   get_height(){
     this._get_height(this.root,0);
   }
-
-
   _get_height(){}
+
+
 
   find_leaves(){
     this._find_leaves(this.root);
@@ -224,52 +202,17 @@ class BinaryTree {
 
 
 
-//------------------------------------------------------------
-main();
-function main () {
-
-  let t = new BinaryTree();
-  let emptyTree = new BinaryTree();
-
-  console.log(emptyTree.isEmpty());
-
-  /* const combinationsWithRepetition = getCombinationsWithRepetition([1,2,3,4,5,6], 5);
-      combinationsWithRepetition.forEach(element => {
-        let sum = 0;
-        element.forEach(item => {
-          sum += item;
-        })
-        t.insert(sum);
-  }); */
-
-  for (let index = 0; index < 8; index++)
-  {
-    t.roll();
+function getCombinationsWithRepetition(arr, length, start = 0, current = [], result = []) {
+  if (current.length === length) { 
+      result.push([...current]);
+      return;
   }
 
-  aList = t.getListFromTree();
-  
-  document.writeln("<h1> in order traversal </h1>")
-  t.in_order_traversal();
-  
-  document.writeln("<h1>pre order traversal</h1> ")
-  t.pre_order_traversal();
+  for (let i = start; i < arr.length; i++) {
+      current.push(arr[i]);
+      getCombinationsWithRepetition(arr, length, i, current, result); // Allow repeated values
+      current.pop();
+  }
 
-  document.writeln("<h1>post order traversal</h1> ")
-  t.post_order_traversal();
-
-  document.writeln("<h1>depth</h1> ")
-  t.get_depth();
-
-
-  t.find_leaves();
-  t.find_parents();
-
-  emptyTree.insert("NOT_EMPTY");
-
-  emptyTree.find_leaves();
-  emptyTree.find_parents();
-
-  console.log(t);
-  console.log(emptyTree);
+  return result;
 }
