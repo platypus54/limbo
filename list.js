@@ -1,3 +1,11 @@
+let dice = new Array(5);
+let rolls = 0;
+
+q = [];
+
+
+//------------------------------------------------------------
+
 class Node{
 
   constructor(data){
@@ -22,6 +30,20 @@ class BinaryTree {
       this.root = null;
   }
 
+  find_min(){
+    return this._find_min(this.root);
+  }
+
+  _find_min(node)
+  {
+    if(node !== null)
+    {
+        this._find_min(node.left)
+        if(node > node.left)
+          data
+    }
+  }
+
   
   isEmpty(){
     if(this.root == null)
@@ -38,7 +60,7 @@ class BinaryTree {
 
     if(node === null)
        return new Node(value);
-    else if(value <= node.data)
+    else if(value < node.data)
     {
       node.left = this._insert(node.left, value);
     }
@@ -76,56 +98,52 @@ class BinaryTree {
   }
 
   roll(){
-    for (let n = 0; n < 5; n++)
-      this.insert(Math.floor(Math.random() * (7 - 1) ) + 1);
+    for (let n = 0; n < 10; n++)
+      this.insert(Math.floor(Math.random() * (10 - 1) ) + 1);
   }
 
   in_order_traversal()
   {
-    this._in_order_traversal(this.root);
+    this._in_order_traversal(this.root, 0);
   }
  
-  _in_order_traversal(node){
+  _in_order_traversal(node, depth){
     if(node !== null)
     {
       
-      this._in_order_traversal(node.left);
-
-        this.colorNode(node);
-
-      this._in_order_traversal(node.right);
+      this._in_order_traversal(node.left, depth + 1);
+      this.colorNode2(node, depth);
+      this._in_order_traversal(node.right, depth + 1);
 
     }
   }
 
   pre_order_traversal()
   {
-    this._pre_order_traversal(this.root);
+    this._pre_order_traversal(this.root, 0);
   }
 
   // {root, left tree, right tree}
-  _pre_order_traversal(node){
+  _pre_order_traversal(node, depth){
     if(node !== null)
       {
-        this.colorNode(node);
-          
-        this._pre_order_traversal(node.left);
-        this._pre_order_traversal(node.right);
+        this.colorNode2(node,depth);
+        this._pre_order_traversal(node.left, depth + 1);
+        this._pre_order_traversal(node.right, depth + 1);
       }
   }
 
   // {root, right tree, left tree}
   post_order_traversal(){
-    this._post_order_traversal(this.root)
+    this._post_order_traversal(this.root, 0)
   }
 
-  _post_order_traversal(node){
+  _post_order_traversal(node, depth){
     if(node !== null)
       {     
-        this._post_order_traversal(node.left);
-        this._post_order_traversal(node.right);
-        
-        this.colorNode(node);
+        this._post_order_traversal(node.left, depth + 1);
+        this._post_order_traversal(node.right, depth + 1);
+        this.colorNode2(node, depth);
       }
   }
 
@@ -138,13 +156,15 @@ class BinaryTree {
       if(node !== null)
       {
         node._meta_data.depth = depth;
-        if(node == this.root)
-          document.writeln(`<p style="color:blue"> ${node._meta_data.depth}</p>`);
-        else
-          document.writeln(`<p> ${node._meta_data.depth}<p>`);
 
-        this._get_depth(node.left,depth + 1);
-        this._get_depth(node.right,depth + 1);
+/*         if(node == this.root)
+          document.writeln(`<h${node._meta_data.depth} style="color:blue"> ${node._meta_data.depth}</h${node._meta_data.depth}>`);
+        else
+          document.writeln(`<h${node._meta_data.depth}> ${node._meta_data.depth} </h${node._meta_data.depth}>`); */
+          
+          this.colorNode2(node,depth);
+          this._get_depth(node.left,depth + 1);
+          this._get_depth(node.right,depth + 1);
         
       }
   }
@@ -165,11 +185,10 @@ class BinaryTree {
       {
         if(node.left == null && node.right == null)
            node._meta_data.isleaf = true;
-        else
-        {   
-            this._find_leaves(node.left);
-            this._find_leaves(node.right);
-        }
+        
+          this._find_leaves(node.left);
+          this._find_leaves(node.right);
+        
       } 
   }
 
@@ -191,12 +210,21 @@ class BinaryTree {
 
   colorNode(node){
         if(node == this.root)
-          document.writeln(`<p style="color:blue"> ${node.data}</p>`);
+          document.writeln(`<p style="color:blue"> ${node.data}</p>`); // is root
         else if(node.left == null && node.right == null)
-          document.writeln(`<p style="color:green"> ${node.data}</p>`);
+          document.writeln(`<p style="color:green"> ${node.data}</p>`); // is leaf
         else if(node.left != null || node.right != null)
-          document.writeln(`<p style="color:orange"> ${node.data}</p>`); 
+          document.writeln(`<p style="color:orange"> ${node.data}</p>`); // is parent
   }
+
+  colorNode2(node, depth){
+    if(node == this.root)
+      document.writeln(`(${depth},${node.data})`); // is root
+    else if(node.left == null && node.right == null)
+      document.writeln(`(${depth},${node.data})`); // is leaf
+    else if(node.left != null || node.right != null)
+      document.writeln(`(${depth},${node.data})`); // is parent
+}
 }
 
 
