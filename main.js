@@ -16,7 +16,7 @@ function main () {
         t.insert(sum);
   }); */
 
-  for (let index = 0; index < 8; index++)
+  for (let index = 0; index < 1; index++)
   {
     t.roll();
   }
@@ -46,4 +46,26 @@ function main () {
 
   console.log(t);
   console.log(emptyTree);
+
+
+  
+  
+  let k = document.getElementById("tree");
+  console.log(k)
+  let ctx = k.getContext("2d");
+
+  ctx.beginPath();
+
+// Move to the starting point (10, 10)
+ctx.moveTo(10, 10);
+
+// Draw a line to (100, 50)
+ctx.lineTo(100, 50);
+
+// Draw the line
+ctx.stroke();
+  
+  
+
+
 }
