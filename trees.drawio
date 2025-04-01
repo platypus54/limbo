@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0" version="26.2.2">
   <diagram name="Page-1" id="28c0V_zp-TiMR2vPcXUR">
-    <mxGraphModel dx="3315" dy="2300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2575" dy="1750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1174,7 +1174,7 @@
         <mxCell id="zjnJhTu_71ZvxikW2iE--131" value="Root" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="-642.3396700888414" y="690" width="78.72258525561587" height="78.72258525561587" as="geometry" />
         </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--176" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;startFill=0;" edge="1" parent="1" source="zjnJhTu_71ZvxikW2iE--132" target="zjnJhTu_71ZvxikW2iE--135">
+        <mxCell id="zjnJhTu_71ZvxikW2iE--176" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.71;entryY=-0.012;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;startFill=0;entryPerimeter=0;" edge="1" parent="1" source="zjnJhTu_71ZvxikW2iE--132" target="zjnJhTu_71ZvxikW2iE--135">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="zjnJhTu_71ZvxikW2iE--132" value="Ancestor" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" vertex="1" parent="1">
@@ -1238,6 +1238,9 @@
         </mxCell>
         <mxCell id="zjnJhTu_71ZvxikW2iE--177" value="depth of a tree is found where the deepest leaf resides" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-930" y="640" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zjnJhTu_71ZvxikW2iE--179" value="&amp;nbsp;( &lt;span style=&quot;color: rgb(255, 169, 41);&quot;&gt;{A,B,C}&lt;/span&gt;,&amp;nbsp; &lt;span style=&quot;color: rgb(63, 191, 255);&quot;&gt;{ {A,B} , {B,C}, {C, A} } &lt;/span&gt;&lt;span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(63, 191, 255);&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-1510" y="350" width="270" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
