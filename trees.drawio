@@ -1004,8 +1004,8 @@
         <mxCell id="zjnJhTu_71ZvxikW2iE--153" value="&lt;div&gt;Examples of graphs&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-1636" y="1131" width="160" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--154" value="A and B are two elements found in Vertices set that make up an element in the Edges set" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="-1620" y="290.43" width="660" height="30" as="geometry" />
+        <mxCell id="zjnJhTu_71ZvxikW2iE--154" value="A and B are two elements found in the Vertices set that make up an element in the Edges set" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-1630" y="290.43" width="680" height="30" as="geometry" />
         </mxCell>
         <mxCell id="zjnJhTu_71ZvxikW2iE--156" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="-680.33" y="-39" width="210" height="219" as="geometry" />
