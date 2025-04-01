@@ -1190,6 +1190,9 @@
         <mxCell id="zjnJhTu_71ZvxikW2iE--152" value="weighted trees?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-1126" y="91" width="140" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="zjnJhTu_71ZvxikW2iE--153" value="&lt;div&gt;Examples of graphs&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-1636" y="1131" width="160" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
