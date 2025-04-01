@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0" version="26.2.2">
   <diagram name="Page-1" id="28c0V_zp-TiMR2vPcXUR">
-    <mxGraphModel dx="3315" dy="2300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2750" dy="1880" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1145,11 +1145,8 @@
         <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-245" value="H" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" parent="zjnJhTu_71ZvxikW2iE--105" vertex="1">
           <mxGeometry x="96.90308302737643" y="136.81693898655638" width="30.155118924508795" height="30.155118924508795" as="geometry" />
         </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--158" value="g = (V, E)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1610" y="474.16999999999996" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--159" value="( V, E ) = ( &lt;span style=&quot;color: rgb(255, 169, 41);&quot;&gt;{A,B,C,D}&lt;/span&gt;, &lt;span style=&quot;color: rgb(63, 191, 255);&quot;&gt;{ {A,B} , {B,C}, {C,D} } &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(63, 191, 255);&quot;&gt;)&lt;/span&gt;&lt;/span&gt; " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-1400" y="255" width="340" height="30" as="geometry" />
+        <mxCell id="zjnJhTu_71ZvxikW2iE--159" value="( V, E ) = ( &lt;span style=&quot;color: rgb(255, 169, 41);&quot;&gt;{A,B,C,D}&lt;/span&gt;,&amp;nbsp; &lt;span style=&quot;color: rgb(63, 191, 255);&quot;&gt;{ {A,B} , {B,C}, {C,D}, {C,B}, {A,C} } &lt;/span&gt;&lt;span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(63, 191, 255);&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-1395" y="255" width="440" height="30" as="geometry" />
         </mxCell>
         <mxCell id="zjnJhTu_71ZvxikW2iE--160" value="" style="group;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="-1640" y="170" width="120" height="114.25999999999999" as="geometry" />
@@ -1207,6 +1204,17 @@
             <mxGeometry x="60" y="50.86" width="350" height="40" as="geometry" />
           </mxCell>
         </UserObject>
+        <UserObject label="https://www.dnsstuff.com/network-graphs" link="https://www.dnsstuff.com/network-graphs" id="zjnJhTu_71ZvxikW2iE--163">
+          <mxCell style="text;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="-1600" y="1160" width="250" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="zjnJhTu_71ZvxikW2iE--165" value="" style="endArrow=oval;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;startArrow=oval;startFill=1;endFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1060" y="100.43" as="sourcePoint" />
+            <mxPoint x="-1010" y="50.43000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
