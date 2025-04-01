@@ -417,7 +417,7 @@
         <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-278" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" parent="PHoDI3Z7Dd6WKzNwkaG9-269" vertex="1">
           <mxGeometry x="76.30434782608697" y="163.74581939799333" width="57.79264214046823" height="57.79264214046823" as="geometry" />
         </mxCell>
-        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-279" value="&lt;h1&gt;post-order traversal&lt;/h1&gt;&lt;div&gt;This traversal can be tricky at first. Same left-to-right approach, but the processing of the nodes are different. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-279" value="&lt;h1&gt;post-order traversal&lt;/h1&gt;&lt;div&gt;This traversal can be tricky at first. Same left-to-right approach, but the processing of the nodes are different. We will traverse all the way left and then all the way right until we reach a node with no descendants. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1460.22" y="530" width="430" height="160" as="geometry" />
         </mxCell>
         <mxCell id="PHoDI3Z7Dd6WKzNwkaG9-280" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" parent="1" edge="1">
@@ -991,7 +991,7 @@
           <mxGeometry x="1465.1552173913044" y="2229.996956521739" width="44.84472049689441" height="44.84472049689441" as="geometry" />
         </mxCell>
         <mxCell id="zjnJhTu_71ZvxikW2iE--90" value="5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="1540.1552173913044" y="2229.996956521739" width="44.84472049689441" height="44.84472049689441" as="geometry" />
+          <mxGeometry x="1550.7152173913043" y="2229.996956521739" width="44.84472049689441" height="44.84472049689441" as="geometry" />
         </mxCell>
         <mxCell id="zjnJhTu_71ZvxikW2iE--93" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.688;entryY=0.045;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="zjnJhTu_71ZvxikW2iE--68" target="zjnJhTu_71ZvxikW2iE--89">
           <mxGeometry relative="1" as="geometry" />
