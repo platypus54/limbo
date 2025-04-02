@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0" version="26.2.2">
   <diagram name="Page-1" id="28c0V_zp-TiMR2vPcXUR">
-    <mxGraphModel dx="4700" dy="3329" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2700" dy="1843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1150,15 +1150,15 @@
             <mxGeometry x="60" y="50.86" width="350" height="40" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="https://www.dnsstuff.com/network-graphs" link="https://www.dnsstuff.com/network-graphs" id="zjnJhTu_71ZvxikW2iE--163">
+        <UserObject label="https://www.dnsstuff.com/network-graphs&#xa;https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees" link="https://www.dnsstuff.com/network-graphs" id="zjnJhTu_71ZvxikW2iE--163">
           <mxCell style="text;whiteSpace=wrap;" vertex="1" parent="1">
-            <mxGeometry x="-1600" y="1160" width="250" height="40" as="geometry" />
+            <mxGeometry x="-1600" y="1160" width="490" height="40" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="zjnJhTu_71ZvxikW2iE--165" value="" style="endArrow=oval;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;startArrow=oval;startFill=1;endFill=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1080" y="-510" as="sourcePoint" />
-            <mxPoint x="-1030" y="-560" as="targetPoint" />
+            <mxPoint x="-830" y="-590" as="sourcePoint" />
+            <mxPoint x="-780" y="-640" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="zjnJhTu_71ZvxikW2iE--179" value="&amp;nbsp;( &lt;span style=&quot;color: rgb(255, 169, 41);&quot;&gt;{A,B,C}&lt;/span&gt;,&amp;nbsp; &lt;span style=&quot;color: rgb(63, 191, 255);&quot;&gt;{ {A,B} , {B,C}, {C, A} } &lt;/span&gt;&lt;span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(63, 191, 255);&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1" vertex="1" parent="1">
@@ -1253,7 +1253,7 @@
         <mxCell id="zjnJhTu_71ZvxikW2iE--220" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="-968.79" y="20" width="910.0047697882726" height="660" as="geometry" />
         </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--218" value="&lt;h1 align=&quot;left&quot; style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;DEPTH&lt;/span&gt;&lt;/h1&gt;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Depth of a tree is found where the deepest leaf resides. Pretend you&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;are in a submarine and descending deeper into the ocean. We start at the&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;surface and dive down increasing in depth. The deeper we are descend the&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;the ocean, the greater we are in depth. There is a stopping point - the&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ocean floor. The ocean floor is where the leafs like to hangout; &lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;align=left;" vertex="1" parent="zjnJhTu_71ZvxikW2iE--220">
+        <mxCell id="zjnJhTu_71ZvxikW2iE--218" value="&lt;h1 align=&quot;left&quot; style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;DEPTH&lt;/span&gt;&lt;/h1&gt;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Depth of a tree is found where the deepest leaf resides. Pretend you&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;are in a submarine and descending deeper into the ocean. We start at the&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;surface and dive down increasing in depth. The deeper we descend the&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;the ocean, the greater we are in depth. There is a stopping point - the&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ocean floor. The ocean floor is where the leafs like to hangout...&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;align=left;" vertex="1" parent="zjnJhTu_71ZvxikW2iE--220">
           <mxGeometry width="910" height="660" as="geometry" />
         </mxCell>
         <mxCell id="zjnJhTu_71ZvxikW2iE--129" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;entryX=0.691;entryY=0.055;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startFill=0;" edge="1" parent="zjnJhTu_71ZvxikW2iE--220" source="zjnJhTu_71ZvxikW2iE--131" target="zjnJhTu_71ZvxikW2iE--132">
@@ -1331,59 +1331,11 @@
         <mxCell id="zjnJhTu_71ZvxikW2iE--173" value="3 - depth / ocean floor" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="zjnJhTu_71ZvxikW2iE--220">
           <mxGeometry x="730.0047697882726" y="450" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--224" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="zjnJhTu_71ZvxikW2iE--221">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-890" y="1080" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="zjnJhTu_71ZvxikW2iE--241" value="geometry?! -&amp;gt; edges as line segments" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-1030" y="-680" width="300" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--225" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="zjnJhTu_71ZvxikW2iE--221">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-760" y="1090" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--226" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="zjnJhTu_71ZvxikW2iE--221">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-700" y="960" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--221" value="Root" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-859.9996700888414" y="981.28" width="78.72258525561587" height="78.72258525561587" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--227" value="A" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-949.9996700888414" y="1071.28" width="78.72258525561587" height="78.72258525561587" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--228" value="B" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-789.9996700888414" y="1081.28" width="78.72258525561587" height="78.72258525561587" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--238" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="zjnJhTu_71ZvxikW2iE--229" target="zjnJhTu_71ZvxikW2iE--235">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--229" value="D" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-553.1496700888414" y="920" width="78.72258525561587" height="78.72258525561587" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--231" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="zjnJhTu_71ZvxikW2iE--230" target="zjnJhTu_71ZvxikW2iE--229">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--230" value="C" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-711.2796700888414" y="920" width="78.72258525561587" height="78.72258525561587" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--234" value="E" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-424.9996700888414" y="991.28" width="78.72258525561587" height="78.72258525561587" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--235" value="F" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-452.4196700888414" y="810.6400000000002" width="78.72258525561587" height="78.72258525561587" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--236" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;strokeColor=#000000;strokeWidth=3;" vertex="1" parent="1">
-          <mxGeometry x="-940" y="865" width="275" height="275" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--237" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.057;entryY=0.301;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="zjnJhTu_71ZvxikW2iE--229" target="zjnJhTu_71ZvxikW2iE--234">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--239" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;strokeColor=#000000;strokeWidth=3;" vertex="1" parent="1">
-          <mxGeometry x="-1100" y="705" width="595" height="595" as="geometry" />
-        </mxCell>
-        <mxCell id="zjnJhTu_71ZvxikW2iE--240" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;strokeColor=#000000;strokeWidth=3;" vertex="1" parent="1">
-          <mxGeometry x="-1103.14" y="652.5" width="705" height="705" as="geometry" />
+        <mxCell id="zjnJhTu_71ZvxikW2iE--242" value="AB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-766" y="-639" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
