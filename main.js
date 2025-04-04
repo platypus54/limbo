@@ -21,7 +21,10 @@ function main () {
     t.roll();
   }
 
-  aList = t.getListFromTree();
+  node1 = new Node();
+  node1.data = 100;
+  insertIntoTree(node1,t.root)
+
   
   document.writeln("<h1> in order traversal </h1>")
   t.in_order_traversal();
@@ -35,7 +38,6 @@ function main () {
   document.writeln("<h1>depth</h1> ")
   t.get_depth();
 
-
   t.find_leaves();
   t.find_parents();
 
@@ -44,28 +46,40 @@ function main () {
   emptyTree.find_leaves();
   emptyTree.find_parents();
 
+  aList = t.getListFromTree();
+
+  console.log(aList)
   console.log(t);
   console.log(emptyTree);
 
+}
 
+function insertIntoTree(node_to_insert,tree_node)
+{
+    if(tree_node === null)
+      return node_to_insert;
+    else if(tree_node.data  <= node_to_insert.data)
+      tree_node.left = insertIntoTree(node_to_insert, tree_node.left) ;
+    else if(tree_node.data  >= node_to_insert.data)
+      tree_node.right = insertIntoTree(node_to_insert, tree_node.right);
+    return node_to_insert;
   
-  
-  let k = document.getElementById("tree");
-  console.log(k)
-  let ctx = k.getContext("2d");
+}
 
-  ctx.beginPath();
+function checkTypeLess(node_to_insert, tree_node)
+{
+    if( typeof(node_to_insert.data) == "String" && typeof(tree_node.data) == "String" ) {
+      return (node_to_insert.data).length < (tree_node.data).length 
+    }
+    else
+      return tree_node.data  < node_to_insert.data;
+}
 
-// Move to the starting point (10, 10)
-ctx.moveTo(10, 10);
-
-// Draw a line to (100, 50)
-ctx.lineTo(100, 50);
-
-// Draw the line
-ctx.stroke();
-  
-  
-
-
+function checkTypeGreater(node_to_insert, tree_node)
+{
+  if( typeof(node_to_insert.data) == "String" && typeof(tree_node.data) == "String" ) {
+    return (node_to_insert.data).length > (tree_node.data).length 
+  }
+  else
+    return tree_node.data  > node_to_insert.data;
 }

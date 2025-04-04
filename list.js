@@ -6,6 +6,14 @@ q = [];
 
 //------------------------------------------------------------
 
+class Pair{
+  constructor(x, y){
+    this.item1 = x;
+    this.item2 = y;
+  }
+}
+
+
 class Node{
 
   constructor(data){
@@ -18,7 +26,7 @@ class Node{
       isChild: false ,
       isRoot: false,
       isParent: false,
-      isleaf: false,
+      isleaf: false
     }
   }
 
@@ -40,7 +48,7 @@ class BinaryTree {
     {
         this._find_min(node.left)
         if(node > node.left)
-          data
+          console.log("hello?")
     }
   }
 
@@ -60,7 +68,7 @@ class BinaryTree {
 
     if(node === null)
        return new Node(value);
-    else if(value < node.data)
+    else if(value <= node.data)
     {
       node.left = this._insert(node.left, value);
     }
@@ -91,9 +99,12 @@ class BinaryTree {
 
   _getListFromTree(node, list){
     if(node !== null){
+
+      let p = new Pair(node._meta_data.depth, node.data)
+      list.push(p);
       this._getListFromTree(node.left,list);
       this._getListFromTree(node.right,list);
-      list.push(node.data);
+      
     }
   }
 
@@ -127,7 +138,7 @@ class BinaryTree {
   _pre_order_traversal(node, depth){
     if(node !== null)
       {
-        this.colorNode2(node,depth);
+        //this.colorNode2(node,depth);
         this._pre_order_traversal(node.left, depth + 1);
         this._pre_order_traversal(node.right, depth + 1);
       }
@@ -155,17 +166,10 @@ class BinaryTree {
     
       if(node !== null)
       {
-        node._meta_data.depth = depth;
-
-/*         if(node == this.root)
-          document.writeln(`<h${node._meta_data.depth} style="color:blue"> ${node._meta_data.depth}</h${node._meta_data.depth}>`);
-        else
-          document.writeln(`<h${node._meta_data.depth}> ${node._meta_data.depth} </h${node._meta_data.depth}>`); */
-          
+          node._meta_data.depth = depth;
           this.colorNode2(node,depth);
           this._get_depth(node.left,depth + 1);
           this._get_depth(node.right,depth + 1);
-        
       }
   }
 
@@ -175,20 +179,16 @@ class BinaryTree {
   _get_height(){}
 
 
-
   find_leaves(){
     this._find_leaves(this.root);
   }
-
   _find_leaves(node){
       if( node !== null)
       {
         if(node.left == null && node.right == null)
-           node._meta_data.isleaf = true;
-        
+          node._meta_data.isleaf = true;
           this._find_leaves(node.left);
           this._find_leaves(node.right);
-        
       } 
   }
 
@@ -201,10 +201,8 @@ class BinaryTree {
       {
           if(node.left != null || node.right != null)
             node._meta_data.isParent = true;
-
           this._find_parents(node.left);
           this._find_parents(node.right);
-        
       } 
   }
 
@@ -226,9 +224,6 @@ class BinaryTree {
       document.writeln(`(${depth},${node.data})`); // is parent
 }
 }
-
-
-
 
 function getCombinationsWithRepetition(arr, length, start = 0, current = [], result = []) {
   if (current.length === length) { 
