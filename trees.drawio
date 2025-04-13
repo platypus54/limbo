@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0" version="26.2.9">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0" version="26.2.10">
   <diagram name="Page-1" id="28c0V_zp-TiMR2vPcXUR">
-    <mxGraphModel dx="3013" dy="3175" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2805" dy="3021" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -932,9 +932,9 @@
         <mxCell id="zjnJhTu_71ZvxikW2iE--153" value="&lt;div&gt;Examples of graphs&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-1636" y="1131" width="160" height="50" as="geometry" />
         </mxCell>
-        <UserObject label="https://www.dnsstuff.com/network-graphs&#xa;https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees" link="https://www.dnsstuff.com/network-graphs" id="zjnJhTu_71ZvxikW2iE--163">
+        <UserObject label="https://www.dnsstuff.com/network-graphs&#xa;https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees&#xa;&#xa;&#xa;not necessarily graphs." link="https://www.dnsstuff.com/network-graphs" id="zjnJhTu_71ZvxikW2iE--163">
           <mxCell style="text;whiteSpace=wrap;" parent="1" vertex="1">
-            <mxGeometry x="-1600" y="1160" width="490" height="40" as="geometry" />
+            <mxGeometry x="-1600" y="1160" width="490" height="140" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="zjnJhTu_71ZvxikW2iE--220" value="" style="group" parent="1" vertex="1" connectable="0">
@@ -1350,12 +1350,12 @@
           <mxGeometry x="2220" y="830" width="450" height="120" as="geometry" />
         </mxCell>
         <mxCell id="EpduaVXi1Es1HOU13oGs-48" value="" style="rounded=1;whiteSpace=wrap;html=1;container=0;" parent="1" vertex="1">
-          <mxGeometry x="2200" y="-98.16" width="820" height="839.32" as="geometry" />
+          <mxGeometry x="2200" y="-90" width="820" height="839.32" as="geometry" />
         </mxCell>
         <mxCell id="zjnJhTu_71ZvxikW2iE--247" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font&gt;Insertion&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;font&gt;- Insert based off condition (BST)&lt;/font&gt;&lt;/p&gt;&lt;p&gt;-&amp;nbsp; &amp;lt;&amp;nbsp;&amp;nbsp;&amp;nbsp; : when the node to be inserted has a value less than the current node in the tree, we move to the &lt;b&gt;left.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;-&amp;nbsp; &amp;gt;&amp;nbsp;&amp;nbsp; : conversely, movement to the &lt;b&gt;right&lt;/b&gt; happens when the node to be inserted is greater than the current node under inspection in the tree.&lt;/p&gt;&lt;p&gt;&lt;font&gt;- Inserting only one node into a &lt;br&gt;tree. &lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;- Inserting data into the tree: &lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Data is passed into the tree &lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;- One thing to remind ourselves here is that the movement is &lt;b&gt;dependent&lt;/b&gt; on the result of the insert condition. Here our condition is &lt;br&gt;less than or greater. So we &quot;move&quot; left when the value we insert into the tree is less than the node we are inspecting in the tree or to the right when greater. The first node we compare will always be the root. When we compare the node we want to insert,3, to the root node,2, the resulting movement directs us to the right (since 3 is greater than 2). This directed movement is not the same as traversals. Sure they both move down the tree, but how they move is different. &lt;i&gt;&lt;b&gt;(will have to clean up eventually, learned some stuff)&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;I could see inserting a whole sub-tree to be different...&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;Sometimes trees can degenerate into a linked list. Balancing can help fix this.&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;The &amp;lt; , &amp;gt; are essential to a BST without this the ordering would not be the same.Changing the condition for the BST messes with the ordering, thus &lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;container=0;fontSize=13;" parent="1" vertex="1">
-          <mxGeometry x="2240.71" y="-45.43" width="270" height="720" as="geometry" />
+          <mxGeometry x="2240.71" y="-45.43" width="270" height="745.43" as="geometry" />
         </mxCell>
-        <mxCell id="vQ__475haoWyeDdASLOt-2" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="vQ__475haoWyeDdASLOt-2" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="2597.16" y="-50" width="242.84" height="170.97" as="geometry" />
         </mxCell>
         <mxCell id="EpduaVXi1Es1HOU13oGs-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;startFill=0;" parent="vQ__475haoWyeDdASLOt-2" source="EpduaVXi1Es1HOU13oGs-2" target="EpduaVXi1Es1HOU13oGs-3" edge="1">
@@ -1385,7 +1385,7 @@
         <mxCell id="EpduaVXi1Es1HOU13oGs-10" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.267;entryY=0.067;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;endArrow=none;startFill=0;" parent="vQ__475haoWyeDdASLOt-2" source="EpduaVXi1Es1HOU13oGs-5" target="EpduaVXi1Es1HOU13oGs-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="vQ__475haoWyeDdASLOt-3" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="vQ__475haoWyeDdASLOt-3" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="2869.0539080459766" y="13.253368421052631" width="66.78160919540232" height="80.95627530364371" as="geometry" />
         </mxCell>
         <mxCell id="EpduaVXi1Es1HOU13oGs-20" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;container=0;" parent="vQ__475haoWyeDdASLOt-3" vertex="1">
@@ -1394,7 +1394,7 @@
         <mxCell id="EpduaVXi1Es1HOU13oGs-15" value="node to put in to tree" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" parent="vQ__475haoWyeDdASLOt-3" vertex="1">
           <mxGeometry width="66.7816091954023" height="32.35627530364372" as="geometry" />
         </mxCell>
-        <mxCell id="vQ__475haoWyeDdASLOt-4" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="vQ__475haoWyeDdASLOt-4" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="2559.877356321839" y="148.7906558704453" width="352.9885057471265" height="291.20647773279336" as="geometry" />
         </mxCell>
         <mxCell id="EpduaVXi1Es1HOU13oGs-11" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="vQ__475haoWyeDdASLOt-4" vertex="1">
@@ -1478,7 +1478,7 @@
         <mxCell id="EpduaVXi1Es1HOU13oGs-47" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Insert&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="vQ__475haoWyeDdASLOt-4" vertex="1">
           <mxGeometry x="280.48275862068976" y="231.88663967611333" width="57.241379310344826" height="32.35627530364372" as="geometry" />
         </mxCell>
-        <mxCell id="vQ__475haoWyeDdASLOt-6" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="vQ__475haoWyeDdASLOt-6" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="2510.706436781609" y="459.99894736842106" width="402.1617872426227" height="163.98947368421057" as="geometry" />
         </mxCell>
         <mxCell id="EpduaVXi1Es1HOU13oGs-62" value="RESULTING &lt;br&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp;&amp;nbsp; TREE&lt;/div&gt;" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=21;fontStyle=1;textShadow=0;labelBackgroundColor=none;horizontal=1;container=0;" parent="vQ__475haoWyeDdASLOt-6" vertex="1">
