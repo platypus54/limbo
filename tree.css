@@ -1,0 +1,78 @@
+
+/* Body styling for overall look */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for buttons and inputs */
+button, input {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3d8b40;
+}
+
+/* Input styling */
+input {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 200px;
+}
+
+input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Container for traversal and metrics */
+div {
+  margin-top: HAI 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Headings */
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* Paragraphs for traversal/metric output */
+p {
+  font-size: 1em;
+  color: #34495e;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-left: 4px solid #4CAF50;
+  border-radius: 4px;
+}
