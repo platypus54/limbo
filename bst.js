@@ -1,4 +1,4 @@
-class Tree {
+class BinarySearchTree {
 
 find_max()
 {
