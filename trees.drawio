@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0" version="26.2.10">
   <diagram name="Page-1" id="28c0V_zp-TiMR2vPcXUR">
-    <mxGraphModel dx="3013" dy="3175" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="5200" dy="4800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -414,7 +414,7 @@
           <mxGeometry x="96.90308302737643" y="136.81693898655638" width="30.155118924508795" height="30.155118924508795" as="geometry" />
         </mxCell>
         <mxCell id="EpduaVXi1Es1HOU13oGs-68" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Removal&lt;/h1&gt;&lt;p&gt;Removal operates similarly to insertion. To find the location (hopefully) of the data to remove in the tree&lt;/p&gt;&lt;p&gt; by moving left or right based off the result of our comparison. When it is found, there are certain cases to be aware of:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1. The simplest case is a node having nothing connected to it at all; it&#39;s a leaf!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2. Next would be two nodes that have descendants. This means the node we would be deleting is a parent. &lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;To ensure that descendants of these nodes are accounted for we need to guarantee to attach them back&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;to the tree.  &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3. Last, would be one child. &lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="2210" y="790" width="510" height="380" as="geometry" />
+          <mxGeometry x="-530" y="-1210" width="510" height="380" as="geometry" />
         </mxCell>
         <mxCell id="2j5uE316bPglDwv54Gb6-22" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Height&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1450" y="430" width="900" height="560" as="geometry" />
