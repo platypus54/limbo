@@ -5,7 +5,6 @@ find_max()
   return this.#_find_max(this.root);
 }
 
-
 find_min()
 {
   return this.#_find_min(this.root);
@@ -107,26 +106,27 @@ colorNode2(node, depth){
     document.writeln(`(${depth},${node.data})`); // is parent
 }
 
-length(){
-
-  return this.#_length(this.root, 0)
+getlength(){
+  return this.#_getLength(this.root)
 }
 
-#_length(node, l){
+#_getLength(node){
   if(node !== null)
   {
-    this.#_length(node.left,l + 1)
-    this.#_length(node.right,l + 1)
-    
+    this.length += 1;
+    this.#_getLength(node.left)
+    this.#_getLength(node.right)
   }
-
-  return l;
 }
+
+
+
 /***********************************/
 
   constructor()
   {
     this.root = null;
+    this.length = 0;
   }
 
   #_find_max(node){
@@ -143,7 +143,7 @@ length(){
   #_find_min(node)
   {
     if(node === null)
-      return null;
+     return null;
     else if(node.left === null)
      return node;
     else
@@ -233,8 +233,6 @@ length(){
   }
 
   // {root, right tree, left tree}
- 
-
   #_post_order_traversal(node, depth){
     if(node !== null)
       {     
@@ -245,8 +243,8 @@ length(){
   }
 
   
-  #_get_depth(node,depth){
-    
+  #_get_depth(node,depth) {
+  
       if(node !== null)
       {
           node._meta_data.depth = depth;
@@ -254,6 +252,7 @@ length(){
           this.#_get_depth(node.left,depth + 1);
           this.#_get_depth(node.right,depth + 1);
       }
+
   }
 
   #_get_height(){}
@@ -264,12 +263,12 @@ length(){
       {
         if(node.left == null && node.right == null)
           node._meta_data.isleaf = true;
-          this.#_find_leaves(node.left);
-          this.#_find_leaves(node.right);
+
+        this.#_find_leaves(node.left);
+        this.#_find_leaves(node.right);
       } 
   }
-
-
+  
   #_find_parents(node){
     if( node !== null)
       {

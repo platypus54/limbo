@@ -4,8 +4,7 @@ class Node{
     this.data = data;
     this.left = null;
     this.right = null;
-    //this.location = new Pair();
-
+  
     this._meta_data = {
       depth: -1 ,
       isChild: false ,
@@ -13,6 +12,7 @@ class Node{
       isParent: false,
       isleaf: false
     }
-
   }
+
+
 }
